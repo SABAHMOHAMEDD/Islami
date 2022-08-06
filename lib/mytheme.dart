@@ -12,9 +12,8 @@ class MyTheme {
       textTheme: const TextTheme(
 
           bodyText1: TextStyle(
-
-            fontSize: 18,
             color: Colors.black,
+            fontSize: 18,
             //   fontWeight: FontWeight.w500,
           ),
         headline4: TextStyle(
@@ -23,7 +22,8 @@ class MyTheme {
          //   fontWeight: FontWeight.w500,
         ),
           headline5: TextStyle(
-              fontSize: 24,
+
+              fontSize: 25,
               color: Colors.black
           )
 
