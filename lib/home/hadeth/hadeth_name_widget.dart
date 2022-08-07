@@ -12,7 +12,6 @@ class HadethNameWidget extends StatelessWidget {
     return InkWell(
       onTap: (){
         Navigator.pushNamed(context, HadethDetailsWidget.RouteName,arguments:Hadeth );
-
       },
       child: Container(
           alignment: Alignment.center,

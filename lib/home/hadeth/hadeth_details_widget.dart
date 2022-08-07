@@ -26,6 +26,7 @@ class HadethDetailsWidget extends StatelessWidget {
                   args.title,
                   style: Theme.of(context).textTheme.headline5,
                 ),
+
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 64),
                   height: 2,

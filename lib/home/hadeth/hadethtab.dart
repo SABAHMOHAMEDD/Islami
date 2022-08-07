@@ -12,7 +12,8 @@ class _HadethTabState extends State<HadethTab> {
 
   @override
   Widget build(BuildContext context) {
-    if (hadethlist.isEmpty) ReadhadethFile();
+    if (hadethlist.isEmpty)
+      {ReadhadethFile();}
     return Column(
       children: [
         Image.asset('assets/images/hadethtab_header.png'),
@@ -75,6 +76,7 @@ class _HadethTabState extends State<HadethTab> {
       ahadethOfFile.add(h);
     }
     hadethlist = ahadethOfFile;
+
     setState(() {});
   }
 }

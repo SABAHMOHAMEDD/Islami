@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:islami/home/hadeth/hadeth_details_widget.dart';
 import 'package:islami/home/quran/sura_details.dart';
 import 'package:islami/home_screen.dart';
 import 'package:islami/mytheme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,10 @@ class MyApp extends StatelessWidget {
         SuraDetailsScreen.RouteName:(_)=>SuraDetailsScreen(),
         HadethDetailsWidget.RouteName: (_)=>HadethDetailsWidget(),
       } ,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
 
+       locale: Locale('ar'),
 
     );
 
