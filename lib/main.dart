@@ -5,18 +5,30 @@ import 'package:islami/home/quran/sura_details.dart';
 import 'package:islami/home_screen.dart';
 import 'package:islami/mytheme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
+
+import 'home/providers/settings_provider.dart';
+
+
 
 void main() {
-  runApp(const MyApp());
+  runApp( ChangeNotifierProvider<SettingsProvider>(
+    create: (buildContext){return SettingsProvider();},
+      child: MyApp()
+  ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
+    var SettingsPovider=Provider.of<SettingsProvider>(context);
+
     return MaterialApp(
       theme: MyTheme.LightTheme,
+      darkTheme: MyTheme.DarkTheme,
+      themeMode: SettingsPovider.currentTheme,
       initialRoute: HomeScreen.RouteName ,
       routes:{
         HomeScreen.RouteName :(_)=>HomeScreen(),
@@ -26,7 +38,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
 
-       locale: Locale('ar'),
+       locale: Locale(SettingsPovider.CurrentLang),
 
     );
 
