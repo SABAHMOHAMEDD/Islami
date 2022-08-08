@@ -15,7 +15,7 @@ class HadethNameWidget extends StatelessWidget {
       },
       child: Container(
           alignment: Alignment.center,
-          child: Text(Hadeth.title, style: Theme.of(context).textTheme.headline5,
+          child: Text(Hadeth.title, style: Theme.of(context).textTheme.headline4,
           )),
     );
   }

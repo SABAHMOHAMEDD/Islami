@@ -14,7 +14,7 @@ SuraNameWidet(this.index,this.title);
       child: Container(
           alignment: Alignment.center,
           padding: EdgeInsets.symmetric(vertical: 6 ),
-          child: Text(title,style: Theme.of(context).textTheme.headline5)),
+          child: Text(title,style: Theme.of(context).textTheme.headline4)),
     );
   }
 }
