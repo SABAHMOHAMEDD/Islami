@@ -3,10 +3,10 @@
   "quran_title": "Quran",
   "hadeth_title": "Hadeth",
   "sebha_title": "Sebha",
+  "setting_title": "Settings",
   "theme": "Theme",
   "radio_title": "Radio",
   "language": "language",
   "dark": "Dark",
-  "light": "Light",
-  "settings_title": "Settings"
+  "light": "Light"
 }

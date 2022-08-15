@@ -30,7 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "quran_title": MessageLookupByLibrary.simpleMessage("Quran"),
         "radio_title": MessageLookupByLibrary.simpleMessage("Radio"),
         "sebha_title": MessageLookupByLibrary.simpleMessage("Sebha"),
-        "setting_title": MessageLookupByLibrary.simpleMessage("Settings"),
+        "settings_title": MessageLookupByLibrary.simpleMessage("Settings"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme")
       };
 }

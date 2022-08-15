@@ -14,6 +14,7 @@ class HadethDetailsWidget extends StatelessWidget {
     var args = ModalRoute.of(context)?.settings.arguments as hadeth;
 
     return Container(
+        padding: EdgeInsets.symmetric(horizontal: 14),
         decoration: BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.fill,
@@ -23,12 +24,11 @@ class HadethDetailsWidget extends StatelessWidget {
               title: Center(child: Text('Islami')),
             ),
             body: Column(
-
               children: [
                 SizedBox(height: 57,),
                 Text(
                   args.title,
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
 
                 Container(
@@ -41,22 +41,19 @@ class HadethDetailsWidget extends StatelessWidget {
                   child: ListView.builder(
                     itemCount: 1,
                     itemBuilder: (BuildContext context, int index) {
-                      
                       return Text((args.content),
-                          style: Theme.of(context).textTheme.headline5,
-
+                          style: Theme.of(context).textTheme.headline4,
                           textAlign: TextAlign.right,
-                          textDirection: TextDirection.rtl
-                      );
+                          textDirection: TextDirection.rtl);
                     },
 
                   ),
                 ),
 
               ],
-              
+
             )
-    )
+        )
   );
   }
 }

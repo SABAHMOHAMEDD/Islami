@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:islami/generated/l10n.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/home/hadeth/hadethtab.dart';
 import 'package:islami/home/providers/settings_provider.dart';
 import 'package:islami/home/quran/quran_tab.dart';
 import 'package:islami/home/radio/radio_tab.dart';
-import 'package:islami/home/tasbeh/tasbeh_tab.dart';
-import 'package:islami/mytheme.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/home/sebha/tasbeh_tab.dart';
 import 'package:islami/settings/settings_tab.dart';
 import 'package:provider/provider.dart';
 
+import 'home/sebha/tasbeh_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String RouteName = 'Home';
@@ -73,11 +72,10 @@ class _HomeScreenState extends State<HomeScreen> {
               label:AppLocalizations.of(context)!.radio_title
             ),
             BottomNavigationBarItem(
-                backgroundColor: Theme.of(context).bottomNavigationBarTheme.backgroundColor,
-
-                icon:Icon(Icons.settings),
-                label:AppLocalizations.of(context)!.setting_title
-
+              backgroundColor:
+                  Theme.of(context).bottomNavigationBarTheme.backgroundColor,
+              icon: Icon(Icons.settings),
+              label: AppLocalizations.of(context)?.settings_title,
             )
           ],
         ),
