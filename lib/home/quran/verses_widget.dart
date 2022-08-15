@@ -11,13 +11,11 @@ class VersesWidget extends StatelessWidget {
         alignment: Alignment.center,
         padding: EdgeInsets.symmetric(vertical: 6 ),
         child: Center(
-          child: ( Text('$content {${index+1}}',style: Theme.of(context).textTheme.headline5,
-            textDirection: TextDirection.rtl
-            ,
-
-            )
-
-          ),
+          child: (Text(
+            '$content {${index + 1}}',
+            style: Theme.of(context).textTheme.headline4,
+            textDirection: TextDirection.rtl,
+          )),
         )
 
     );

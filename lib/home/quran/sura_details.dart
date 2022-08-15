@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami/home/quran/verses_widget.dart';
@@ -26,24 +24,31 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       ReadFile(args.index);
     }
     return Container(
+    //  padding: EdgeInsets.symmetric(horizontal: 12),
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(SettingsPovider.GetBackGround()))),
       child: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text(args.title)),
+          title: Center(
+              child: Text(
+            args.title,
+            style: TextStyle(color: Theme.of(context).cardColor),
+          )),
         ),
         body: verses.isEmpty
             ? Center(child: CircularProgressIndicator())
 
             : Container(
-          margin: EdgeInsets.symmetric(vertical:64 ,horizontal: 12),
-          decoration:  BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(24)
-          ),
-              child: ListView.separated(
+                padding: EdgeInsets.symmetric(horizontal: 12),
+                margin: EdgeInsets.symmetric(
+                  vertical: 40,
+                ),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).backgroundColor,
+                    borderRadius: BorderRadius.circular(24)),
+                child: ListView.separated(
                   itemCount: verses.length,
                   itemBuilder: (_, index) {
                     return VersesWidget(index, verses[index]);

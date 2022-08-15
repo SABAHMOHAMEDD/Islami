@@ -27,7 +27,7 @@ class _HadethTabState extends State<HadethTab> {
                       width: 2, color: Theme.of(context).primaryColor))),
           child: Text(
             'الاحاديث',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
         ),
         Expanded(

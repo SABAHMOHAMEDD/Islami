@@ -132,7 +132,10 @@ class QuranTab extends StatelessWidget {
               border: Border.symmetric(
                   horizontal: BorderSide(
                       width: 2, color: Theme.of(context).primaryColor))),
-          child: Text('Name', style: Theme.of(context).textTheme.headline4,),
+          child: Text(
+            'القراّن',
+            style: Theme.of(context).textTheme.bodyText1,
+          ),
         ),
         Expanded(
           child: ListView.separated(

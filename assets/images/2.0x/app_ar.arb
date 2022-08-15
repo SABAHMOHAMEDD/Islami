@@ -4,9 +4,9 @@
   "hadeth_title": "الحديث",
   "sebha_title": "التسبيح",
   "radio_title": "الأذاعة",
+  "settings_title": "الاعدادات",
   "language": "اللغة",
   "dark": "ليلى",
   "light": "نهارى",
-  "theme": "المظهر",
-  "settings_title": "الاعدادات"
+  "theme": "المظهر"
 }

@@ -1,6 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
 import 'intl/messages_all.dart';
 
 // **************************************************************************
@@ -90,16 +91,6 @@ class S {
     );
   }
 
-  /// `Settings`
-  String get setting_title {
-    return Intl.message(
-      'Settings',
-      name: 'setting_title',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Theme`
   String get theme {
     return Intl.message(
@@ -145,6 +136,16 @@ class S {
     return Intl.message(
       'Light',
       name: 'light',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings_title {
+    return Intl.message(
+      'Settings',
+      name: 'settings_title',
       desc: '',
       args: [],
     );
